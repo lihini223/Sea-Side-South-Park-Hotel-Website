@@ -1,0 +1,29 @@
+*{
+  font-family: 'Roboto', sans-serif;
+}
+
+#navbar_scroll {
+    background-color: #333;
+    position: fixed;
+    top: -50px;
+    width: 100%;
+    display: block;
+    transition: top 0.3s;
+    overflow: hidden;
+  }
+  
+  #navbar_scroll a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  #navbar_scroll a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
