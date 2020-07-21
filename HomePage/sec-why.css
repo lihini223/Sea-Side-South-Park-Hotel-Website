@@ -1,0 +1,56 @@
+*{
+    font-family: 'Roboto', sans-serif;
+ }
+
+h2{
+    color: #3b332a;
+}
+
+h5{
+    margin-top: -20px;
+    display: block;
+}
+.sec_facts{
+    width: 100%;
+    height: 400px;
+    background-color: white;
+}
+/*
+.box{
+    width: 900px;
+    height: 300px;
+    background-color: transparent;
+    padding: 30px;
+    margin-top: 30px;
+    margin-left: 50px;
+}*/
+
+.deck{
+    margin-top: 0px;
+    width: 900px;
+    height: 300px;
+    margin-left: 250px;
+    margin-right: 0;
+    align-items: center;
+
+}
+
+.deck-img{
+    width: 65px;
+    height: 70px;
+    margin: auto;
+    display: block;
+}
+
+.item{
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 40px;
+    padding: 10px;
+    margin-top: 70px;
+    align-items: center;
+}
+
+.topic{
+    margin-top: 50px;
+}
