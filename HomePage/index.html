@@ -256,3 +256,62 @@
         <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, ea adipisci voluptate porro eius amet accusamus harum exercitationem, nisi nihil perferendis inventore quae nesciunt velit officia asperiores molestias necessitatibus deserunt.</h1>
     </figure>
 </div>
+<!-- Footer -->
+
+
+<!-- java script code snippet-->
+    <script>
+        function togglesidebar(){
+            document.getElementById('sidebar').classList.toggle('active');
+        }
+
+        function relocate_book()
+        {
+            location.href = "www.yoursite.com";
+        } 
+
+        // MDB Lightbox Init
+        $(function () {
+        $("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
+        });
+
+        // When the user scrolls down 20px from the top of the document, slide down the navbar
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("navbar_scroll").style.top = "0";
+        } else {
+        document.getElementById("navbar_scroll").style.top = "-50px";
+        }
+        }
+
+    </script>
+
+<!--offer section carousel-->
+<script>
+    $('#recipeCarousel').carousel({
+  interval: 10000
+})
+
+$('.carousel .carousel-item').each(function(){
+    var minPerSlide = 3;
+    var next = $(this).next();
+    if (!next.length) {
+    next = $(this).siblings(':first');
+    }
+    next.children(':first-child').clone().appendTo($(this));
+    
+    for (var i=0;i<minPerSlide;i++) {
+        next=next.next();
+        if (!next.length) {
+        	next = $(this).siblings(':first');
+      	}
+        
+        next.children(':first-child').clone().appendTo($(this));
+    }
+});
+
+</script>
+</body>
+</html>
