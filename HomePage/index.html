@@ -4,10 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="sidebar.css">
+    <link rel="stylesheet" type="text/css"  href="scroll-navbar.css">
     <link rel="stylesheet" type="text/css" href="top-section.css">
     <link rel="stylesheet" type="text/css" href="background.css">
-    <link type="text/css" rel="stylesheet" href="back.css">
-    
+    <link rel="stylesheet" type="text/css"  href="bg_slider.css">
+
+    <link rel="stylesheet" type="text/css"  href="sec-intro.css">
+    <link rel="stylesheet" type="text/css"  href="sec-why.css">
+    <link rel="stylesheet" type="text/css"  href="sec-gallery.css">
+    <link rel="stylesheet" type="text/css"  href="sec-offers.css">
+    <link rel="stylesheet" type="text/css"  href="sec-accommadation.css">
+    <link rel="stylesheet" type="text/css"  href="sec-d&s.css">
+    <link rel="stylesheet" type="text/css"  href="sec-explore.css">
+    <link rel="stylesheet" type="text/css"  href="">
     <!-- CSS only -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
@@ -19,32 +28,40 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
-    <title>side bar</title>
-
+    <title>Sea Side South Park Hotel</title>
 </head>
-
-    <body>
+<body>
 
 <div id="wrapper">
-    <!--Background image slider-->
+
+    <!-- Background image slider -->
     <div class="slide_bg"></div>
-    
+
     <!-- head section [logo + book button] -->
     <header class="header">
-        <img src="logo.png" class="logo">
+        <img src="LOGO (1).png" class="logo">
         <input type="button" class="btn btn-info waves-effect" value="BOOK YOUR STAY" id="book-btn" onclick=" relocate_book()">
     </header>
-    
-<!-- side bar -->
-      <div id="sidebar">
-          <!-- side bar toggle button -->
+
+    <!-- nav bar scroll -->
+    <div id="navbar_scroll">
+        <a href="#home">HOME</a>
+        <a href="#news">ACCOMMADATION</a>
+        <a href="#">OFFERS</a>
+        <a href="#">GALLERY</a>
+        <a href="#contact">CONTACT US</a>
+        <a href="#" id="book">BOOK YOUR STAY</a>
+      </div>
+
+    <!-- side bar -->
+    <div id="sidebar">
+        <!-- side bar toggle button -->
         <div class="toggle-btn " onclick="togglesidebar();">
             <span></span>
             <span></span>
             <span></span>
         </div>
-
-          
+        
         <!-- vertical navigation -->
         <nav class="navbar" id="navID">
             </button>
@@ -90,10 +107,165 @@
     </div>
 </div>
 
-    
-    
-   
-    <!-- java script code snippet -->
+<!-- Section - introduction -->
+<div class="sec_intro">
+    <div>
+        <h1 class="heading">SEA SIDE SOUTH PARK HOTEL</h1>
+        <div class="clogo"><img src="commonlogo-removebg-preview.png"></div>
+        <div>
+            <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dolorum unde eveniet veniam facilis ut atque saepe temporibus ullam ab omnis amet, sequi ratione optio repudiandae quis totam. Ut, vel.</p>
+        </div>
+    </div>
+ </div>
+
+<!-- section - why sea side south park -->
+<div class="sec_facts">
+
+            <h2>WHY BOOK WITH US</h2>
+
+            <div class="deck">
+
+                <div class="item" id="b1">
+                    <img src="why/1.png" class="deck-img">
+                    <h5 class="topic">BEST RATE GUARANTEE</h5>
+                </div>
+
+                <div class="item" id="b2">
+                    <img src="why/2.png" class="deck-img">
+                    <h5 class="topic">EXCLUSIVE OFFERS</h5>
+                </div>
+                
+                <div class="item" id="b3">
+                    <img src="why/3.png" class="deck-img">
+                    <h5 class="topic">SO MANY ACTIVITIES</h5>
+                </div>
+
+            </div>  
+
+</div>
+
+<!-- section - gallery-->
+<div class="sec_gallery">
+    <h2>GALLERY</h2>
+    <img class="img-fluid img-offer" src="offer/1.gif">
+</div>
+
+ <!-- offers section-->
+ <h2>OFFERS</h2>
+    <div class="container text-center my-3">
+        <div class="row mx-auto my-auto">
+            <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
+                <div class="carousel-inner w-100" role="listbox">
+
+                    <div class="carousel-item active">
+                        <div class="col-md-4">
+                            <div class="card offer_c">
+                                <img class="img-fluid img-offer" src="offer/1.gif">
+                                <div class="offer-link">
+                                    <a href="#">VIEW OFFER 1</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="col-md-4">
+                            <div class="card offer_c">
+                                <img class="img-fluid img-offer" src="offer/2.gif">
+                                <div class="offer-link">
+                                    <a href="#">VIEW OFFER 2</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="col-md-4">
+                            <div class="card offer_c">
+                                <img class="img-fluid img-offer" src="offer/3.gif">
+                                <div class="offer-link">
+                                    <a href="#">VIEW OFFER 3</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="col-md-4">
+                            <div class="card offer_c">
+                                <img class="img-fluid img-offer" src="offer/4.gif">
+                                <div class="offer-link">
+                                    <a href="#">VIEW OFFER 4</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="col-md-4">
+                            <div class="card offer_c">
+                                <img class="img-fluid img-offer" src="offer/5.gif">
+                                <div class="offer-link">
+                                    <a href="#">VIEW OFFER 5</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="col-md-4">
+                            <div class="card offer_c">
+                                <img class="img-fluid img-offer" src="offer/6.gif">
+                                <div class="offer-link">
+                                    <a href="#">VIEW OFFER 6</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a class="carousel-control-prev w-auto" href="#recipeCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next w-auto" href="#recipeCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+ 
+
+<!-- section - accommadation section -->
+<div class="sec_accommadation">
+    <h2>ACCOMMADATION</h2>
+    <div class="container">
+
+    </div>
+</div>
+
+<!-- spa & dining section -->
+<div class="sec_sd">
+    <h2>DINING & SPA</h2>
+ </div>
+
+<!-- explore section -->
+ <div class="sec_explore">
+    <h2>EXPLORE SEA SIDE SOUTH PARK</h2>
+ </div>
+
+<!-- newsletter subscription section -->
+<div class="sec_newsletter">
+    <figure>
+        <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, ea adipisci voluptate porro eius amet accusamus harum exercitationem, nisi nihil perferendis inventore quae nesciunt velit officia asperiores molestias necessitatibus deserunt.</h1>
+    </figure>
+</div>
+
+<!-- Footer -->
+
+
+<!-- java script code snippet-->
     <script>
         function togglesidebar(){
             document.getElementById('sidebar').classList.toggle('active');
@@ -104,6 +276,48 @@
             location.href = "www.yoursite.com";
         } 
 
+        // MDB Lightbox Init
+        $(function () {
+        $("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
+        });
+
+        // When the user scrolls down 20px from the top of the document, slide down the navbar
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("navbar_scroll").style.top = "0";
+        } else {
+        document.getElementById("navbar_scroll").style.top = "-50px";
+        }
+        }
+
     </script>
+
+<!--offer section carousel-->
+<script>
+    $('#recipeCarousel').carousel({
+  interval: 10000
+})
+
+$('.carousel .carousel-item').each(function(){
+    var minPerSlide = 3;
+    var next = $(this).next();
+    if (!next.length) {
+    next = $(this).siblings(':first');
+    }
+    next.children(':first-child').clone().appendTo($(this));
+    
+    for (var i=0;i<minPerSlide;i++) {
+        next=next.next();
+        if (!next.length) {
+        	next = $(this).siblings(':first');
+      	}
+        
+        next.children(':first-child').clone().appendTo($(this));
+    }
+});
+
+</script>
 </body>
 </html>
