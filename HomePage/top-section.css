@@ -1,0 +1,47 @@
+    *{
+        font-family: 'Roboto', sans-serif;
+    }
+
+	.header .logo {
+		margin: 0 auto;
+		padding: 10px 0;
+		position: absolute;
+		top: 15px;
+		left: 0;
+		right: 0;
+		z-index: 3;
+        text-align: center;
+    }
+    
+    .logo{
+        width: 300px;
+        height: 150px;
+    }
+
+    #book-btn{
+        border: 2px solid rgb(180,151,90);
+        margin-top: 8px;
+        margin-bottom: 5px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-right: 10px;
+		position: absolute;
+		top: 20px;
+		right: 0;
+        z-index: 5;
+        border-radius: 0;
+        background: transparent;
+        color: white;
+        text-align: center;
+        font-size: 18px;
+		display: inline-block;
+        text-shadow: rgb(180,151,90);
+        text-emphasis: bold;
+        /*background-color: rgba(180, 151, 90,0.8);*/
+    }
+
+    #book-btn:hover{
+        background: #b4975a;
+        border-radius: 0;
+        border-color: #9a8046;
+    }
