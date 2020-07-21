@@ -1,0 +1,10 @@
+.sec_sd{
+    width: 100%;
+    height: 600px;
+    background-image: linear-gradient(to bottom, beige, white);
+}
+
+h2{
+    padding-top: 40px;
+    text-align: center;
+}
