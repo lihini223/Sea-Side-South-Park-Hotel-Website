@@ -148,7 +148,35 @@
 
 <div class="sec_gallery">
     <h2>GALLERY</h2>
-    <img class="img-fluid img-offer" src="offer/1.gif">
+<div class="container" id="gallery"> 
+    <div class="row">
+        <img class="myImg" id="img1" src="gallery/1.jpg" alt="Snow" style="width:100%;max-width:300px">
+        <img class="myImg" id="img2" src="gallery/2.jpg" alt="Snow" style="width:100%;max-width:300px">
+        <img class="myImg" id="img3" src="gallery/3.jpg" alt="Snow" style="width:100%;max-width:300px">
+    </div>
+
+    <div class="row">
+        <img class="myImg" id="img4" src="gallery/4.jpg" alt="Snow" style="width:100%;max-width:300px">
+        <img class="myImg" id="img5" src="gallery/5.jpg" alt="Snow" style="width:100%;max-width:300px">
+        <img class="myImg" id="img6" src="gallery/6.jpg" alt="Snow" style="width:100%;max-width:300px">
+    </div>
+
+    <div class="row">
+        <img class="myImg" id="img7" src="gallery/7.jpg" alt="Snow" style="width:100%;max-width:300px">
+        <img class="myImg" id="img8" src="gallery/8.jpg" alt="Snow" style="width:100%;max-width:300px">
+        <img class="myImg" id="img9" src="gallery/9.jpg" alt="Snow" style="width:100%;max-width:300px">
+    </div>
+</div>  
+<!-- The Modal-01 -->
+<div id="myModal" class="modal">
+
+    <!-- The Close Button -->
+    <span class="close">&times;</span>
+  
+    <!-- Modal Content (The Image) -->
+    <img class="modal-content" id="img1">
+
+  </div>
 </div>
 
  <!-- offers section-->
@@ -256,30 +284,48 @@
 
     </script>
 
-<!--offer section carousel-->
+<!--Gallery section js-->
 <script>
-    $('#recipeCarousel').carousel({
-  interval: 10000
-})
-
-$('.carousel .carousel-item').each(function(){
-    var minPerSlide = 3;
-    var next = $(this).next();
-    if (!next.length) {
-    next = $(this).siblings(':first');
+    // Open the Modal
+    function openModal() {
+      document.getElementById("myModal").style.display = "block";
     }
-    next.children(':first-child').clone().appendTo($(this));
     
-    for (var i=0;i<minPerSlide;i++) {
-        next=next.next();
-        if (!next.length) {
-        	next = $(this).siblings(':first');
-      	}
-        
-        next.children(':first-child').clone().appendTo($(this));
+    // Close the Modal
+    function closeModal() {
+      document.getElementById("myModal").style.display = "none";
     }
-});
-
-</script>
+    
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    </script>
 </body>
 </html>
