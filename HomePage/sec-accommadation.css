@@ -12,3 +12,61 @@ h2{
     padding-top: 40px;
     text-align: center;
 }
+
+.rooms{
+    width: 350px;
+    height: 460px;
+    border: 1px solid gainsboro;
+    box-shadow: lightgray;
+    margin: 15px;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.room-img{
+    width: 350px;
+    height: 260px;
+}
+
+.price-box{
+    margin: 12px;
+    padding: 5px;
+    border-bottom: 2px solid rgb(180,151,90);
+}
+
+.price{
+    font-size: 25px;
+    font-weight: bold;
+    border-bottom: 2px solid gray;
+    padding: 6px;
+}
+
+.per-night{
+    color: gray;
+    margin-left: 15px;
+    font-size: 15px;
+}
+
+.link{
+    margin-left: 115px;
+    margin-top: 8px;
+    padding: 10px;
+    align-items: center;
+    background-color: rgba(121, 85, 72, 0.7) ;
+    width: 120px;
+}
+
+.link:hover{
+    border: 2px solid rgb(180,151,90);*/
+}
+.link-text{
+    font-size: 20px;
+    color: white;
+}
+
+a:link{
+    color: white;
+}
+a:link:hover{
+    color: black;
+}
