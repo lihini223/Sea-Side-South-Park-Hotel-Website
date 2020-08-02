@@ -24,7 +24,7 @@ h2{
     cursor: pointer;
     transition: 0.3s;
     width: 150px;
-    height: 160px;
+    height: 250px;
     margin: 5px;
     animation: zoom;
   }
