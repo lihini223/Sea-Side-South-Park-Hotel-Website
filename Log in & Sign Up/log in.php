@@ -78,7 +78,7 @@
     <div class="container" id="container">
         <div class="form-container sign-up-container">
 
-            <form name="CreateAccount" action="#" method="POST" onsubmit="return validateEmail2();">
+            <form name="CreateAccount" action="" method="POST" onsubmit="return validateEmail2();">
                 <h1>Create Account</h1>
                 <div class="social-container">
                     <a href="#" class="social"><i class="fa fa-facebook"></i></a>
@@ -94,7 +94,7 @@
             </form>
         </div>
         <div class="form-container sign-in-container">
-            <form name="SignIn" action="#" method="POST" onsubmit="return validateEmail1();">
+            <form name="SignIn" action="process.php" method="POST" onsubmit="return validateEmail1();">
                 <h1>Sign In</h1>
                 <div class="social-container">
                     <a href="#" class="social"><i class="fa fa-facebook"></i></a>
@@ -102,8 +102,8 @@
                     <a href="#" class="social"><i class="fa fa-linkedin"></i></a>
                 </div>
                 <span>or use your account</span>
-                <input type="text" name="SIemail" placeholder="Email">
-                <input type="password" name="SIpassword" placeholder="Password">
+                <input type="text" name="lemail" placeholder="Email">
+                <input type="password" name="lpassword" placeholder="Password">
                 <a href="#">Forgot Your Password?</a>
 
                 <button onclick="validateform();">Sign In</button>
