@@ -14,7 +14,6 @@ $password = stripcslashes($password);
 $email = mysql_real_escape_string($email); 
 $password = mysql_real_escape_string($password); 
 
-//connect to the server
 
 //query
 $qry = "insert into users (Name,Email,Password) values($name,$email,$password)";
