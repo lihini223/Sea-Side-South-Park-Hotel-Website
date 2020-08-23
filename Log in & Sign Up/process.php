@@ -9,6 +9,7 @@ $password = stripcslashes($password);
 $username = mysql_real_escape_string($email); 
 $password = mysql_real_escape_string($password); 
 
+//connect to the server
 
 
 ?>
