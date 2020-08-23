@@ -18,4 +18,13 @@ $password = mysql_real_escape_string($password);
 $qry = "select * from users where email = '$email' and password = '$password'";
 $result = mysql_query($con,$qry);
 
+$row = mysql_fetch_array($result);
+
+if ($row['email'] == $email && $row['password'] == $password) {
+
+}
+else{
+
+}
+
 ?>
