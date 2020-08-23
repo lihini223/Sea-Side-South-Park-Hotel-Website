@@ -16,6 +16,6 @@ $password = mysql_real_escape_string($password);
 
 //query
 $qry = "select * from users where email = '$email' and password = '$password'";
-$result = mysql_query();
+$result = mysql_query($con,$qry);
 
 ?>
