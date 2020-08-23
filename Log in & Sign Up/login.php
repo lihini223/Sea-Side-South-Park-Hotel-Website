@@ -14,11 +14,7 @@
                 alert("Please Enter Your Password");
                 return;	
             }
-            else if(document.SignIn.SIpassword.value.length<6)
-            {
-                alert("Password must be at least 6 characters long.");  
-                return false;
-            }
+
             if(document.SignIn.SIemail.value.length==0)
             {
                 alert("Missing Enter Your Email");
@@ -32,11 +28,7 @@
                 alert("Please Enter Your Password");
                 return;	
             }
-            else if(document.SignIn.SIpassword.value.length<6)
-            {
-                alert("Password must be at least 6 characters long.");  
-                return false;
-            }
+
             if(document.CreateAccount.SUemail.value.length==0)
             {
                 alert("Please Enter Your Email");
@@ -78,7 +70,7 @@
     <div class="container" id="container">
         <div class="form-container sign-up-container">
 
-            <form name="CreateAccount" action="" method="POST" onsubmit="return validateEmail2();">
+            <form name="CreateAccount" action="signup.php" method="POST" onsubmit="return validateEmail2();">
                 <h1>Create Account</h1>
                 <div class="social-container">
                     <a href="#" class="social"><i class="fa fa-facebook"></i></a>
@@ -86,10 +78,10 @@
                     <a href="#" class="social"><i class="fa fa-linkedin"></i></a>
                 </div>
                 <span>or use your email for registration</span>
-                <input type="text" name="SUname" placeholder="Name">
-                <input type="text" name="SUemail" placeholder="Email">
-                <input type="password" name="SUpassword" placeholder="Password">
-                <button onclick="validateform2();">SignUp</button>
+                <input type="text" name="name" placeholder="Name">
+                <input type="text" name="email" placeholder="Email">
+                <input type="password" name="password" placeholder="Password">
+                <button onclick="validateform2();" >SignUp</button>
                 
             </form>
         </div>

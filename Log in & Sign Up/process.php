@@ -22,6 +22,8 @@ $row = mysql_fetch_array($result);
 
 if ($row['email'] == $email && $row['password'] == $password) {
     echo "Welcome !";
+    header('Location: ../HomePage/index.html');
+    exit;
 }
 else{
     echo "invalid Email or Password";
