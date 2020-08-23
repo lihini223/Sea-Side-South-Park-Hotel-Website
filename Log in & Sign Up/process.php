@@ -1,4 +1,7 @@
 <?php
+
+include '../sqlconnection.php' ;
+
 //getting user inputs into variables
 $email = $_POST['lemail'];
 $password = $_POST['lpassword'];
@@ -12,7 +15,7 @@ $password = mysql_real_escape_string($password);
 //connect to the server
 
 //query
-$qry = "";
+$qry = "select * from users where email = '$email' and password = '$password'";
 $result = mysql_query();
 
 ?>
