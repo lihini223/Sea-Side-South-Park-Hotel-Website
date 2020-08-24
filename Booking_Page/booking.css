@@ -15,6 +15,7 @@ section
     align-items: center;
     min-height: 100vh;
     background: #684b0d;
+    
 }
 section::before
 {
@@ -33,6 +34,7 @@ section .container
     min-height: 550px;
     display: flex;
     z-index: 1000;
+    
 }
 section .container .contactus
 {
@@ -47,6 +49,7 @@ section .container .contactus
     flex-direction: column;
     justify-content: space-between;
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+  
 }
 section .container .contactus h2 {
     color: #fff;
