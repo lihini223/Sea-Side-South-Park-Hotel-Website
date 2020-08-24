@@ -76,19 +76,54 @@
                   color: blanchedalmond;
                   font-size: 18px;
               }
+              /*navbar css*/
+              header ul {
+                  list-style-type: none;
+                  margin: 0;
+                  padding: 0;
+                  overflow: hidden;
+                  background-color: #333;
+              }
+  
+              header li {
+                float: left;
+              }
+  
+              header li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+              }
+  
+              header li a:hover {
+                background-color: #111;
+              }
+
+              .presidential{
+                justify-items: center;
+                text-align: center;
+                width: 1200px;
+                margin:auto;
+                margin-top: 50px;
+              }
             </style>
           </head>
           <body>
-            <nav>
+            <header>
               <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Previous page</a></li>
-                <li><a href="#">Next Page</a></li>
-               
+                <li><a class="active" href="#home">HOME</a></li>
+                <li><a href="#news">ACCOMMADATION</a></li>
+                <li><a href="#contact">GALLERY</a></li>
+                <li><a href="#about">CONTACT US</a></li>
+                <li><a href="#book">BOOK YOUR STAY</a></li>
               </ul>
-            </nav>
+            </header>
+            <div class="presidential">
             <p><h2>Presidential Suites</h2></p>
-            <p><h4>For a little extravagance on your holiday, the most special accommodation is found at Sea Side South Park Presidential Suite. Space – 200m² of it to call your own a luxurious bedroom, lounge and dining room for 8, all complete with the finest fittings and features.</h4></p>
+            <p><h4>For a little extravagance on your holiday, the most special accommodation is found at Sea Side South Park Presidential Suite. 
+              Space – 200m² of it to call your own a luxurious bedroom, lounge and dining room for 8, all complete with the finest fittings and features.</h4></p>
             <div class="container">
               <div class="gallery">
                 <img src="presidential-suite-gallery-1.jpg">

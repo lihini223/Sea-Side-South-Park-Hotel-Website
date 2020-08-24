@@ -25,7 +25,7 @@
             
             width: 1200px;
             height: 500px;
-            background-color: black;
+            background-color: rgb(221, 193, 118);
             opacity: 0.9;
             padding: 55px;
 
@@ -36,6 +36,7 @@
             text-align: center;
             text-transform: uppercase;
             font-weight: 100px;
+            color:grey
 
         }
 
@@ -43,7 +44,7 @@
 
         h4{
             text-align: center;
-            color: white;
+            color:grey;
             font-weight: normal;
         }
 
@@ -71,10 +72,50 @@
         form{
             background-color: black;
         }
-        
+        /*navbar css*/
+        header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  header li {
+    float: left;
+  }
+  
+  header li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  header li a:hover {
+    background-color: #111;
+  }
+
+  .deluxe{
+    justify-items: center;
+    text-align: center;
+    width: 1200px;
+    margin:auto;
+    margin-top: 50px;
+  }
     </style>
 
 <body>
+    <header>
+        <ul>
+          <li><a class="active" href="#home">HOME</a></li>
+          <li><a href="#news">ACCOMMADATION</a></li>
+          <li><a href="#contact">GALLERY</a></li>
+          <li><a href="#about">CONTACT US</a></li>
+          <li><a href="#book">BOOK YOUR STAY</a></li>
+        </ul>
+        </header>
     
 
     <div class="wd container-fluid">
@@ -108,8 +149,8 @@
                     <img src="../premium room/premium-gallery-1.jpg" alt="img" class="img-responsive room-img">
             
                  <div class="price-box">
-                    <h3 align="center">Deluxe Room</h3>
-                    <p align="center"><span class="price">$120.00</span> <span class="per-night">per night</span></p>
+                    <h3 align="center">Premium Room</h3>
+                    <p align="center"><span class="price">$150.00</span> <span class="per-night">per night</span></p>
                 </div>
                 <div class="link" align="center">
                     <a href="../premium room/premium.html" class="link-text">Explore</a>
@@ -121,8 +162,8 @@
                     <img src="../presidential/presidential-suite-gallery-1.jpg" alt="img" class="img-responsive room-img">
              
                 <div class="price-box">
-                    <h3 align="center">Classic Room</h3>
-                    <p align="center"><span class="price">$120.00</span> <span class="per-night">per night</span></p>
+                    <h3 align="center">Presidential Suite</h3>
+                    <p align="center"><span class="price">$200.00</span> <span class="per-night">per night</span></p>
                 </div>
                 <div class="link" align="center">
                     <a href="../presidential/presidential suite.html" class="link-text">Explore</a>
