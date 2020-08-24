@@ -4,25 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booking page</title>
-    <link rel="stylesheet" href="contact us.css">
+    <link rel="stylesheet" href="booking.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     
 </head>
-<header>
-    <ul>
-        <li><a class="active" href="#home">HOME</a></li>
-        <li><a href="#news">ACCOMMADATION</a></li>
-        <li><a href="#contact">GALLERY</a></li>
-        <li><a href="#about">CONTACT US</a></li>
-        <li><a href="#book">BOOK YOUR STAY</a></li>
-      </ul>
-</header>
+
 <body>
-  
+    <header>
+        <ul>
+            <li><a class="active" href="#home">HOME</a></li>
+            <li><a href="#news">ACCOMMADATION</a></li>
+            <li><a href="#contact">GALLERY</a></li>
+            <li><a href="#about">CONTACT US</a></li>
+            <li><a href="#book">BOOK YOUR STAY</a></li>
+          </ul>
+    </header>
+    <br>
     <section>
     <div class="container">
         <div class="contactus">
             <div>
+                <h1>Been Here Before ?</h1>
+                <input type="button" class="btn btn-info waves-effect" value="BOOK YOUR STAY" id="book-btn" onclick=" relocate_login()"><br/><br/>
+                <input type="button" class="btn btn-info waves-effect" value="BOOK YOUR STAY" id="book-btn" onclick=" relocate_signup()">
             </div>
               
         </div>
@@ -59,22 +63,22 @@
                         <span>Number of Adults</span>
                     </div>
                     <div class="inputBox w20">
-                        <input type="number" name="Childrens" required placeholder="" >
+                        <input type="number" name="Children" required placeholder="" >
                         <span>Number of Childrens</span>
                     </div>
                     <div class="inputBox w20">
-                        <input type="number" name="room" required placeholder="">
+                        <input type="number" name="rooms" required placeholder="">
                         <span>Number of rooms</span>
                     </div>
                     <div class="inputBox w20" >Room Type
-                        <select>
+                        <select name="roomt">
                             <option>Family room</option>
                             <option>Deluxe room</option>
                             <option>Classic room</option>
                         </select>
                     </div>
                     <div class="inputBox w20">Meal Type
-                        <select>
+                        <select name="meal">
                             <option>Breakfast only</option>
                             <option>Half board</option>
                             <option>Full board</option>
@@ -101,7 +105,16 @@
            </div>
     </div>
 </div>
-
+<script>
+        function relocate_login()
+        {
+            location.href = "../Booking_Page/booking.html";
+        } 
+        function relocate_signup()
+        {
+            location.href = "../Log in & Sign Up/signup.php";
+        }
+</script>
 </body>
 </html>
 
