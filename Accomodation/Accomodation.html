@@ -1,29 +1,39 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <link rel="stylesheet" type="text/css"  href="../HomePage/sec-accommadation.css">
+    <!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
     <style>
 
         body{
             font-family: 'Segoe UI';
-            color: white;
-            background:   url(fun-hotel.jpg)no-repeat;
-            background-size: cover ;
+            color: rgb(236, 208, 164);
+    
         }
             
         .wd{
 
             text-align: justify;
             margin-top: 40px;
-            float: right;
-            width: 300px;
+            
+            width: 1200px;
             height: 500px;
             background-color: black;
             opacity: 0.9;
             padding: 55px;
+
         }
 
 
         h1{
-            text-align: justify;
+            text-align: center;
             text-transform: uppercase;
             font-weight: 100px;
 
@@ -58,14 +68,16 @@
         }
 
         form, input[type="button"]:hover{background-color: teal;}
-        
+        form{
+            background-color: black;
+        }
         
     </style>
 
 <body>
     
 
-    <div class="wd">
+    <div class="wd container-fluid">
         <h1 align="center">Accomodation</h1>
         <h4 align="center">Adorned in shades of beige and off white, the rooms at Sea Side South Park Hotel emit nothing less than the brilliant essence of Sri Lankan hospitality. Contemporary comforts such as plush furnishings and modern amenities bring to life the ultimate experience of luxury on a small island in the Indian Ocean. The views from our vibrant living spaces are simply meant to take your breath away! Visit, stay and experience a lavish island getaway.</h4>
         <h2 align="center"><div class="opt">
@@ -74,6 +86,50 @@
             </div>
         </h2>
     </div> 
+
+    <div class="container">
+        
+        <div class="row accrooms" >
+            <div class="rooms">
+              
+                    <img src="../deluxe room/deluxe-gallery-1.jpg" alt="img" class="img-responsive room-img">
+              
+                <div class="price-box">
+                    <h3 align="center">Deluxe Room</h3>
+                    <p align="center"><span class="price">$120.00</span> <span class="per-night">per night</span></p>
+                </div>
+                <div class="link" align="center">
+                    <a href="../deluxe room/deluxe.html" class="link-text">Explore</a>
+                </div>
+            </div>
+    
+            <div class="rooms">
+           
+                    <img src="../premium room/premium-gallery-1.jpg" alt="img" class="img-responsive room-img">
+            
+                 <div class="price-box">
+                    <h3 align="center">Deluxe Room</h3>
+                    <p align="center"><span class="price">$120.00</span> <span class="per-night">per night</span></p>
+                </div>
+                <div class="link" align="center">
+                    <a href="../premium room/premium.html" class="link-text">Explore</a>
+                </div>
+            </div>
+    
+            <div class="rooms">
+                
+                    <img src="../presidential/presidential-suite-gallery-1.jpg" alt="img" class="img-responsive room-img">
+             
+                <div class="price-box">
+                    <h3 align="center">Classic Room</h3>
+                    <p align="center"><span class="price">$120.00</span> <span class="per-night">per night</span></p>
+                </div>
+                <div class="link" align="center">
+                    <a href="../presidential/presidential suite.html" class="link-text">Explore</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     
 
