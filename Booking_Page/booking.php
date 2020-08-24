@@ -25,12 +25,12 @@
         <div class="contactus">
             <div>
                 <h1>Been Here Before ?</h1>
-                <input type="button" class="btn btn-info waves-effect" value="BOOK YOUR STAY" id="book-btn" onclick=" relocate_login()"><br/><br/>
-                <input type="button" class="btn btn-info waves-effect" value="BOOK YOUR STAY" id="book-btn" onclick=" relocate_signup()">
+                <input type="button" class="btn btn-info waves-effect" value="BOOK YOUR STAY" id="book-btn" ><br/><br/>
+                <input type="button" class="btn btn-info waves-effect" value="BOOK YOUR STAY" id="book-btn" >
             </div>
               
         </div>
-        <form action="" name="frm1">
+        <form action="booking_process.php" name="frm1" method = "POST">
             <div class="contactform" >
                 <h2>BOOKING</h2>
                 <div class="formBox">
@@ -55,7 +55,7 @@
                         <span>Check In</span>
                     </div> 
                     <div class="inputBox w20">
-                        <input type="date" name="checkout" required placeholder="">
+                        <input type="date" name="checkout" required>
                         <span>Check Out</span>
                     </div>
                     <div class="inputBox w20">
@@ -63,7 +63,7 @@
                         <span>Number of Adults</span>
                     </div>
                     <div class="inputBox w20">
-                        <input type="number" name="Children" required placeholder="" >
+                        <input type="number" name="Children"  placeholder="" >
                         <span>Number of Childrens</span>
                     </div>
                     <div class="inputBox w20">
@@ -87,7 +87,7 @@
                    
                      
                     <div class="inputBox w100">
-                        <input type="submit" value="Send" onclick="validate();">
+                        <input type="submit" value="Send" >
                     </div> 
                 </div>
             </div>
@@ -106,14 +106,7 @@
     </div>
 </div>
 <script>
-        function relocate_login()
-        {
-            location.href = "../Booking_Page/booking.html";
-        } 
-        function relocate_signup()
-        {
-            location.href = "../Log in & Sign Up/signup.php";
-        }
+
 </script>
 </body>
 </html>
