@@ -12,11 +12,11 @@
 <body>
     <header>
         <ul>
-            <li><a class="active" href="#home">HOME</a></li>
-            <li><a href="#news">ACCOMMADATION</a></li>
-            <li><a href="#contact">GALLERY</a></li>
-            <li><a href="#about">CONTACT US</a></li>
-            <li><a href="#book">BOOK YOUR STAY</a></li>
+            <li><a class="active" href="../HomePage/index.html">HOME</a></li>
+            <li><a href="../Accomodation/Accomodation.html">ACCOMMADATION</a></li>
+            <li><a href="../gallery/gallery.html">GALLERY</a></li>
+            <li><a href="../contactus/contactus.php">CONTACT US</a></li>
+            <li><a href="../Booking_Page/booking.html">BOOK YOUR STAY</a></li>
           </ul>
     </header>
     <br>
@@ -25,8 +25,7 @@
         <div class="contactus">
             <div>
                 <h1>Been Here Before ?</h1>
-                <input type="button" class="btn btn-info waves-effect" value="BOOK YOUR STAY" id="book-btn" ><br/><br/>
-                <input type="button" class="btn btn-info waves-effect" value="BOOK YOUR STAY" id="book-btn" >
+                <input type="button" class="btn btn-info waves-effect" value="LOGIN | SIGN UP" id="book-btn" onclick="login();">
             </div>
               
         </div>
@@ -106,7 +105,9 @@
     </div>
 </div>
 <script>
-
+    function login(){
+        location.href = "../Log in & Sign Up/login.php";
+    }
 </script>
 </body>
 </html>

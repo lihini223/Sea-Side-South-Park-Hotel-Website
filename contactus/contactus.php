@@ -10,11 +10,11 @@
 </head>
 <header>
     <ul>
-        <li><a class="active" href="#home">HOME</a></li>
-        <li><a href="#news">ACCOMMADATION</a></li>
-        <li><a href="#contact">GALLERY</a></li>
-        <li><a href="#about">CONTACT US</a></li>
-        <li><a href="#book">BOOK YOUR STAY</a></li>
+        <li><a class="active" href="../HomePage/index.html">HOME</a></li>
+        <li><a href="../Accomodation/Accomodation.html">ACCOMMADATION</a></li>
+        <li><a href="../gallery/gallery.html">GALLERY</a></li>
+        <li><a href="../contactus/contactus.php">CONTACT US</a></li>
+        <li><a href="../Booking_Page/booking.html">BOOK YOUR STAY</a></li>
       </ul>
 </header>
 <body>
