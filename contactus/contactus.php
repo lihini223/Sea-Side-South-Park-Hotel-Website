@@ -49,7 +49,7 @@
                     <li><a href="#"><img src="youtube.png"></a></li>
                 </ul>
         </div>
-        <form action="" name="frm1">
+        <form action="inquiry.php" name="frm1" method="POST">
             <div class="contactform" >
                 <h2>Let us know what you think!</h2>
                 <div class="formBox">
@@ -66,11 +66,11 @@
                         <span>Email Address</span>
                     </div>
                     <div class="inputBox w50">
-                        <input type="text" name="" required>
+                        <input type="text" name="phone" required>
                         <span>Mobile Number</span>
                     </div>  
                     <div class="inputBox w100">
-                        <textarea name="" required></textarea>
+                        <textarea name="message" required></textarea>
                         <span>write your message here... </span>
                     </div> 
                     <div class="inputBox w100">
