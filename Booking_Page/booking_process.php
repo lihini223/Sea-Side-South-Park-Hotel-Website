@@ -26,11 +26,11 @@ $password = mysql_real_escape_string($password);
 
 //query
 $qry = "INSERT INTO booking (FirstName,LastName,PhoneNumber,Email,CheckIn,CheckOut,Adults,Children,MealType,RoomType,Rooms) 
-VALUES('$fname','$lname','$email','phonenumber','checkin','checkout','adults','children','rooms','mealtype','roomtype')";
+VALUES('$fname','$lname','$email','$phonenumber','$checkin','$checkout','$adults','$children','$mealtype','$roomtype','rooms')";
 $result = mysqli_query($con,$qry);
 
 if($result == true){
-    echo "Data inserted Successfully!";
+    echo "<br>You will recieve the booking confirmation including your payment details via a email soon. Thank you for booking with us";
 }
 else{
     die("Error inserting data".mysqli_error($con));
