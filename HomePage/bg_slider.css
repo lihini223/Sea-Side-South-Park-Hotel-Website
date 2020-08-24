@@ -16,10 +16,10 @@ body{
     background-repeat: no-repeat;   
     background-attachment: scroll;
    
-    transition: 200s;
+    transition: 100s;
     animation-name: animate;
     animation-direction: alternate-reverse;
-    animation-duration: 100s; 
+    animation-duration: 12s; 
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
     animation-play-state: running;
