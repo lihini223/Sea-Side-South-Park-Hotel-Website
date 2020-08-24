@@ -3,6 +3,11 @@
         <!DOCTYPE html>
         <html>
           <head>
+            <html lang="en">
+
+          
+          
+
             <title>deluxe room</title>
             <style>
               *{
@@ -77,19 +82,55 @@
                   color: blanchedalmond;
                   font-size: 18px;
               }
-            </style>
+/*navbar css*/
+              header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  header li {
+    float: left;
+  }
+  
+  header li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  header li a:hover {
+    background-color: #111;
+  }
+
+  .deluxe{
+    justify-items: center;
+    text-align: center;
+    width: 1200px;
+    margin:auto;
+    margin-top: 50px;
+  }
+  </style>
           </head>
           <body>
-            <nav>
+            <header>
               <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Previous page</a></li>
-                <li><a href="#">Next Page</a></li>
-               
+                <li><a class="active" href="#home">HOME</a></li>
+                <li><a href="#news">ACCOMMADATION</a></li>
+                <li><a href="#contact">GALLERY</a></li>
+                <li><a href="#about">CONTACT US</a></li>
+                <li><a href="#book">BOOK YOUR STAY</a></li>
               </ul>
-            </nav>
-            <p><h2>Deluxe Rooms</h2></p>
-            <p><h4>In the buzzing beachside, resort amenities of the cosiest kind are yours at our deluxe rooms with all the comforts you need. Bold colours paint bright cheer in the décor reflecting the vibrant surrounds. When the sun is high, retire to your balcony or terrace for some leisurely sunbathing or watch the waves by moonlight with a little night cap. Restful night… sleep tight.</h4></p>
+              </header>
+            <div class="deluxe">
+                <h2>Deluxe Rooms</h2>
+                <p><h4>In the buzzing beachside, resort amenities of the cosiest kind are yours at our deluxe rooms with all the comforts you need. Bold colours paint bright cheer in the décor reflecting the vibrant surrounds. When the sun is high, retire to your balcony or terrace for some 
+              leisurely sunbathing or watch the waves by moonlight with a little night cap. Restful night… sleep tight.</h4></p>
+            </div>
             <div class="container">
               <div class="gallery">
                 <img src="deluxe-gallery-1.jpg">
